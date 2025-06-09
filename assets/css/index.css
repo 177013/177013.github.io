@@ -1,0 +1,18 @@
+@import url("/assets/css/fonts.css");
+
+body {
+  font-family: "New Tegomin", serif;
+  color: white;
+}
+
+.centerText {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.centerText > div > * {
+  margin: 0;
+}
