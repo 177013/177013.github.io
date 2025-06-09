@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,6 +28,7 @@
     <script type="text/javascript">
       function pageInit() {
         // pageInit() exec
+        langQue();
         preStartAudio();
       }
     </script>
@@ -37,8 +38,8 @@
   </head>
   <body onload="pageInit()" onclick="startAudio()">
     <audio id="playAud" style="width: 0; height: 0;" src="/assets/audio/sentinelle_177013.mp3" loop></audio>
-    <div class="centerText">
-      <div>
+    <div id="centerText">
+      <div lang="en">
         <p>soon, they will hear my story again.</p>
         <br>
         <p>吉田咲🌹</p>
