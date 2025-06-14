@@ -39,7 +39,7 @@ function langQue() {
 }
 
 async function fetchCountryByIP() {
-  let res = await fetch(`https://api.ipinfo.io/lite/token=${ipinfo_api}`),
+  let res = await fetch(`https://api.ipinfo.io/lite/token=${process.env.IP_INFO_API}`),
     data = await res.json();
   switch (await data.country_code) {
     case "JP":
