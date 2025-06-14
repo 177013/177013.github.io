@@ -1,3 +1,3 @@
 // github secrets and stuff
 
-const ipinfo_api = process.env.IP_INFO_API;
+const ipinfo_api = window.IP_INFO_API;
