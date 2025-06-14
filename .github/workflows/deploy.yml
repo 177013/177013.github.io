@@ -38,11 +38,6 @@ jobs:
         with:
           # Upload entire repository
           path: '.'
-      - name: Initialize GitHub Secrets
-        run: |
-          echo "Initializing GitHub Secrets. Please wait."
-        env:
-          IP_INFO_API: ${{ secrets.IP_INFO_API }}
       - name: Finalize and Publish
         id: deployment
         uses: actions/deploy-pages@main
