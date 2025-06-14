@@ -1,2 +1,3 @@
-// github secrets and stuff. must be kept blank.
-// functions to be made in secrets.yml
+// github secrets and stuff
+
+const ipinfo_api = process.env.IP_INFO_API;
