@@ -1,0 +1,12 @@
+{
+  "name": "吉田咲🌹",
+  "version": "20250614",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "thebelovedmoon and associates (tbmassoc)",
+  "license": "MIT"
+}
