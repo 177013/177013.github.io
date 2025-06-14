@@ -1,3 +1,2 @@
-// github secrets and stuff
-
-const ipinfo_api = window.IP_INFO_API;
+// github secrets and stuff. must be kept blank.
+// functions to be made in secrets.yml
