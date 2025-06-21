@@ -6,6 +6,7 @@ function preStartAudio() {
 function startAudio() {
   document.getElementById("playAud").play();
   document.title = preStartAudio();
+  scanForInput();
 }
 
 function langQue() {
@@ -49,4 +50,37 @@ async function fetchCountryByIP() {
       window.location.replace("?lang=en");
       return;
   }
+}
+
+function scanForInput() {
+  document.addEventListener("keydown", (e) => {
+    const target = "177013";
+    if (!window.keysListen) {
+      window.keysListen = {
+        progress: 0,
+        originalTitle: preStartAudio(),
+      };
+    }
+    const expectedChar = target[window.keysListen.progress];
+    if (e.key.length === 1 && e.key.toLowerCase() === expectedChar) {
+      window.keysListen.progress++;
+      document.title = target.slice(0, window.keysListen.progress);
+      if (window.keysListen.progress === target.length) {
+        window.keysListen.progress = 0;
+        document.title = window.keysListen.originalTitle;
+        setTimeout(() => {
+          dl = Object.assign(document.createElement("a"), {
+            href: "/assets/zip/177013.zip",
+            rel: "noopener noreferrer",
+            download: "177013.zip",
+          });
+          dl.click();
+          dl.remove();
+        }, 0);
+      }
+    } else if (e.key.length === 1) {
+      window.keysListen.progress = 0;
+      document.title = window.keysListen.originalTitle;
+    }
+  });
 }
