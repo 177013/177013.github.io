@@ -25,7 +25,11 @@ video {
 html {
   background-color: black;
   color: white;
+}
+body {
   font-family:
+    "New Tegomin",
+    "Noto Color Emoji",
     system-ui,
     -apple-system,
     BlinkMacSystemFont,
@@ -37,12 +41,13 @@ html {
     "Open Sans",
     "Helvetica Neue",
     sans-serif;
-}
-body {
-  font-family: "New Tegomin", "Noto Color Emoji";
   * {
     margin: 0;
   }
+}
+
+.tbmassoc-brand {
+  font-family: "Glacial Indifference";
 }
 
 .ctr {
