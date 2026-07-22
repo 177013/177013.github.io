@@ -70,6 +70,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 5;
+  box-shadow: 0 4px 8px #00000060;
   * { margin: 0; }
   .headerGrid {
     display: -moz-grid;
@@ -203,4 +204,44 @@ footer {
     color: white;
   }
   button:hover { background-color: #222; }
+}
+
+.yoshidaStoryNew {
+  width: 100%;
+  background-image: url("/assets/images/001_\(139\).png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: black;
+  * { margin: 0; }
+  .yoshidaStoryBG {
+    width: 100%;
+    background-color: #e27faf80;
+    -webkit-backdrop-filter: blur(0.5em);
+    backdrop-filter: blur(0.5em);
+    img {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16 / 5;
+      -o-object-fit: cover;
+      object-fit: cover;
+      -o-object-position: center center;
+      object-position: center center;
+    }
+    @media screen and (max-width: 768px) {
+      img { aspect-ratio: 16 / 11; }
+    }
+    .yoshidaStoryTxt {
+      width: 25em;
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 3.75em 1em;
+      text-align: center;
+    }
+  }
+}
+
+span[class^="animeRef"] {
+  cursor: help;
+  text-decoration: underline dotted;
 }
